@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // ? Custom ones
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    // ? Babel Plugin Module Resolver
+    "baseUrl": "./src",
+    "paths": {
+      "@shared-components/*": ["./components"],
+      "@shared-constants": ["./shared/constants"],
+      "@font-size": ["./shared/utils/fonts"],
+      "@api": ["./services/api"],
+      "@colors": ["./shared/utils/colors"],
+      "@theme": ["./shared/theme/themes"],
+      "@services/*": ["./services/*"],
+      "@screens/*": ["./screens/*"],
+      "@utils": ["./utils/"],
+      "@assets": ["./assets/"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
